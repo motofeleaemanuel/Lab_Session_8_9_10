@@ -40,9 +40,7 @@
         {% endif %}
       </header>
       <section>
-
       Bine ai venit la lab <button onclick="alertCookie()">Show cookies</button>
-
       </section>
       <footer>
         {% if site.github.is_project_page %}
@@ -52,6 +50,6 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script> document.cookie = "session=test GDPR"; document.cookie = "favorite_task=collect Data"; function alertCookie() { alert(document.cookie); } </script> 
+    <script src="script.js"></script>
   </body>
 </html>
