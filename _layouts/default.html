@@ -13,6 +13,41 @@
     {% include head-custom.html %}
   </head>
   <body>
+    <div>
+    <button onclick="showCookies()">Show cookies</button>
+    <button onclick="clearOutputCookies()">Clear</button>
+    <div>
+      <code id="cookies"></code>
+    </div>
+  </div>
+  <div>
+    <button onclick="showCookieValue()">Show cookie value</button>
+    <button onclick="clearOutputCookieValue()">Clear</button>
+    <div>
+      <code id="cookie-value"></code>
+    </div>
+  </div>
+  <div>
+    <button onclick="doOnce()">Only do something once</button>
+    <button onclick="clearOutputDoOnce()">Clear</button>
+    <div>
+     <code id="do-once"></code>
+    </div>
+    <div>
+      <button onclick="resetOnce()">Reset only once cookie</button>
+      <button onclick="clearOutputResetOnce()">Clear</button>
+      <div>
+       <code id="reset-once"></code>
+      </div>
+    </div>
+    <div>
+      <button onclick="checkACookieExists()">Check a cookie exists</button>
+      <button onclick="clearOutputACookieExists()">Clear</button>
+      <div>
+        <code id="a-cookie-existence"></code>
+      </div>
+    </div>
+  </div>
     <div class="wrapper">
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
@@ -50,6 +85,10 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script src="script.js"></script>
+    <script src="ex1.js"></script>
+    <script src="ex2.js"></script>
+    <script src="ex3.js"></script>
+    <script src="ex4.js"></script>
+    <script src="ex5.js"></script>
   </body>
 </html>
